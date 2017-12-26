@@ -88,11 +88,10 @@ WIN_COMBINATIONS = [
 def won?(board)
   results = nil
   WIN_COMBINATIONS.each do |winner|
-    test_win = winner
-    if test_win.all?{|tester| board[tester] == "X"}
-      results = test_win
-    elsif test_win.all?{|tester| board[tester] == "O"}
-      results = test_win
+    if winner.all?{|tester| board[tester] == "X"}
+      results = winner
+    elsif winner.all?{|tester| board[tester] == "O"}
+      results = winner
     end
   end
   return results
