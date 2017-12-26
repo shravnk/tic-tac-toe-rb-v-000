@@ -66,10 +66,10 @@ def play(board)
     turn(board)
   end
   if draw?(board)
-    puts "Cat's game!"
+    puts "Cat's Game!"
   else
     xo = winner(board)
-    puts "Congratulations, #{xo}!"
+    puts "Congratulations,#{xo}!"
   end
 end
 
