@@ -69,7 +69,7 @@ def play(board)
     puts "Cat's Game!"
   else
     xo = winner(board)
-    puts "Congratulations,#{xo}!"
+    puts "Congratulations #{xo}!"
   end
 end
 
